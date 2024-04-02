@@ -1,5 +1,5 @@
 #include "eratosthenes.h"
-#include <cstring>
+
 std::vector<int> sieve(int n) {
 	bool* prime = new bool[n + 1];
 	memset(prime, true, sizeof(prime));
