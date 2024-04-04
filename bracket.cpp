@@ -1,7 +1,7 @@
 #include "bracket.h"
 
 bool checkBrackets(std::string s) {
-	stack<char> brackets;
+	std::stack<char> brackets;
 	bool flag = true;
 	for (int i = 0; i < s.size() && flag; i++) {
 		if (s[i] == '[' || s[i] == '(' || s[i] == '<' || s[i] == '{') {
