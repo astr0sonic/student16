@@ -1,6 +1,6 @@
 #include "rpn.h"
 
-double calculateRPN(const std::string& expr) {
+double calculateRPN(const std::string& expression) {
     std::stack<double> operands;
     std::queue<std::string> syms;
     std::string expr = expression;
