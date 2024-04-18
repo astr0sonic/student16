@@ -72,7 +72,7 @@ double calculate(const std::string& expr) {
 	std::string opt = expr;
 	int i = 0;
 	std::string temp;
-	opt.erase(remove_if(opt.begin(), opt.end(), ::isspace), opt.end());
+	opt.erase(remove_if(opt.begin(), opt.end(), isspace), opt.end());
 	if (!check(opt))
 		throw std::exception();
 	else {
